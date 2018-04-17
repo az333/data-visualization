@@ -69,7 +69,7 @@
 		}
 
 	function click(d){
-	    window.location.href = d.id + ".html";
+	    window.location.href = d.id;
 	}
 		d3.select(id).selectAll(".state")
 			.data(uStatePaths).enter().append("path").attr("class","state").attr("d",function(d){ return d.d;})
