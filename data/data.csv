@@ -398,7 +398,6 @@ Firearm Deaths;1,144;19.0;38,658;11.8
 Homicide;570;9.9;19,103;6.1
 Drug Overdose Deaths;1,371;23.6;63,632;19.8
 
-
 NE Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Cancer;3,477;153.6;32nd;155.8
 2. Heart Disease;3,322;140.3;43rd;165.5
@@ -526,22 +525,6 @@ North Dakota Mortality Data;Deaths;Rate**;U.S. Deaths;U.S. Rate***
 Firearm Deaths;90;11.9;38,658;11.8
 Homicide;17;Unreliable;19,362;6.2
 Drug Overdose Deaths;77;10.6;63,632;19.8
-
-MT Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
-1. Heart Disease;2,138;154.4;30th;165.5
-2. Cancer;2,031;145.9;41st;155.8
-3. Chronic Lower Respiratory Disease;722;51.9;11th;40.6
-4. Accidents;626;54.1;22nd;47.4
-5. Stroke;440;32.5;39th (tie);37.3
-6. Alzheimer’s Disease;314;22.6;41st;30.3
-7. Diabetes;311;23.6;16th;21.0
-8. Suicide;267;25.9;1st;13.5
-9. Chronic Liver Disease/Cirrhosis;160;13.6;6th;10.7
-10. Kidney Disease;155;11.3;30th (tie);13.1
-Montana Mortality Data;Deaths;Rate**;U.S. Deaths;U.S. Rate***
-Firearm Deaths;194;18.9;38,658;11.8
-Homicide;42;4.3;19,103;6.1
-Drug Overdose Deaths;119;11.7;63,632;19.8
 
 OH Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;27,410;185.1;12th;165.5
@@ -687,22 +670,6 @@ Firearm Deaths;3,353;12.1;38,658;11.8
 Homicide;1,669;6.0;19,362;6.2
 Drug Overdose Deaths;2,831;10.1;63,632;19.8
 
-UT Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
-1. Heart Disease;3,636;150.0;36th;165.5
-2. Cancer;3,125;122.4;50th;155.8
-3. Accidents;1,211;43.8;39th (tie);47.4
-4. Stroke;932;38.8;20th;37.3
-5. Alzheimer’s disease;904;39.3;9th;30.3
-6. Chronic Lower Respiratory Disease;875;35.8;40th;40.6
-7. Diabetes;624;24.6;9th (tie);21.0
-8. Suicide;620;21.8;5th;13.5
-9. Flu/Pneumonia;380;15.5;12th;13.5
-10. Kidney Disease;370;15.2;18th;13.1
-Utah Mortality Data;Deaths;Rate**;U.S. Deaths;U.S. Rate***
-Firearm Deaths;370;12.9;38,658;11.8
-Homicide;80;2.5;19,362;6.2
-Drug Overdose Deaths;635;22.4;63,632;19.8
-
 VT Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;1,366;158.8;26th;165.5
 2. Cancer;1,356;158.4;24th;155.8
@@ -798,3 +765,36 @@ Wyoming Mortality Data;Deaths;Rate**;U.S. Deaths;U.S. Rate***
 Firearm Deaths;101;17.4;38,658;11.8
 Homicide;17;n/a;19,362;6.2
 Drug Overdose Deaths;99;17.6;63,632;19.8
+
+UT Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
+1. Heart Disease;3,636;150.0;36th;165.5
+2. Cancer;3,125;122.4;50th;155.8
+3. Accidents;1,211;43.8;39th (tie);47.4
+4. Stroke;932;38.8;20th;37.3
+5. Alzheimers disease;904;39.3;9th;30.3
+6. Chronic Lower Respiratory Disease;875;35.8;40th;40.6
+7. Diabetes;624;24.6;9th (tie);21.0
+8. Suicide;620;21.8;5th;13.5
+9. Flu/Pneumonia;380;15.5;12th;13.5
+10. Kidney Disease;370;15.2;18th;13.1
+Utah Mortality Data;Deaths;Rate**;U.S. Deaths;U.S. Rate***
+Firearm Deaths;370;12.9;38,658;11.8
+Homicide;80;2.5;19,362;6.2
+Drug Overdose Deaths;635;22.4;63,632;19.8
+
+MT Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
+1. Heart Disease;2,138;154.4;30th;165.5
+2. Cancer;2,031;145.9;41st;155.8
+3. Chronic Lower Respiratory Disease;722;51.9;11th;40.6
+4. Accidents;626;54.1;22nd;47.4
+5. Stroke;440;32.5;39th (tie);37.3
+6. Alzheimers Disease;314;22.6;41st;30.3
+7. Diabetes;311;23.6;16th;21.0
+8. Suicide;267;25.9;1st;13.5
+9. Chronic Liver Disease/Cirrhosis;160;13.6;6th;10.7
+10. Kidney Disease;155;11.3;30th (tie);13.1
+Montana Mortality Data;Deaths;Rate**;U.S. Deaths;U.S. Rate***
+Firearm Deaths;194;18.9;38,658;11.8
+Homicide;42;4.3;19,103;6.1
+Drug Overdose Deaths;119;11.7;63,632;19.8
+
