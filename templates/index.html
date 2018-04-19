@@ -13,7 +13,8 @@
 	  <br>
 	  <div class="row">
       <div class="col-md-3">
-        <select class="form-control">
+        <form method="GET" action="/compare/">
+        <select class="form-control" name="state1">
           <option>AK</option>
           <option>AL</option>
           <option>AR</option>
@@ -69,10 +70,10 @@
       <div class="col-md-3 text-center">
         <br>
         <br>
-        <button type="button" class="btn btn-primary">Submit</button>
+        <input type="submit" class="btn btn-primary" value="Submit">
       </div>
       <div class="col-md-3">
-        <select class="form-control">
+        <select class="form-control" name="state2">
           <option>AK</option>
           <option>AL</option>
           <option>AR</option>
@@ -124,6 +125,7 @@
           <option>WV</option>
           <option>WY</option>
         </select>
+      </form>
       </div>
     </div>
 </div>
