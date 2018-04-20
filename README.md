@@ -1,5 +1,7 @@
 # Data Visualization Project
 
+## Team Death
+
 ## Description of Data:
 
 Shows statistics of gun deaths and other leading causes of death by state.
@@ -15,7 +17,7 @@ Gun violence is a major current issue in the US.
 
 ## Explanation of Data Visualization:
 
-We will have a map of the US with a color range that shows firearm deaths per population size. We will also have bar graphs showing how other causes of death compare to gun violence for each state.
+We will have a map of the US and each state will be a different shade of blue depending on the firearm deaths proportional to its population size. Under the US map, users will have an option to select two states to compare leading causes of deaths. This will redirect the user to another page which shows a double bar graph about the leading causes of death for a side-by-side comparison of those two states.
 
 ## User Interaction:
 
