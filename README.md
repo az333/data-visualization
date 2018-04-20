@@ -21,7 +21,7 @@ We will have a map of the US and each state will be a different shade of blue de
 
 ## User Interaction:
 
-The user can click on states to get the stats for all leading causes of death, and choose 2 states to see a side by side comparison.
+On the US map, the user can hover over each state and a tooltip would inform the user of the number of deaths based on firearms and the rate of death (based on population). The user can click on states to get the stats for all leading causes of death, and choose 2 states to see a side-by-side comparison of leading causes of death with a double bargraph. 
 
 ## Effects:
 
