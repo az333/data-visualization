@@ -1,7 +1,7 @@
 AL Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;12,832;222.5;4th;165.5
 2. Cancer;10,419;174.0;7th;155.8
-3. Chronic Lower Respiratory Diseases;3,326;56.2;7th;40.6
+3. Chronic Lower Respiratory Disease;3,326;56.2;7th;40.6
 4. Stroke;2,967;51.6;1st;37.3
 5. Accidents;2,755;55.5;18th;47.4
 6. Alzheimers Disease;2,507;45.0;3rd (tie);30.3
@@ -18,7 +18,7 @@ AK Leading Causes of Death, 2016;Deaths;Death Rate***;State Rank*;U.S. Rate**
 1. Cancer;995;158.7;22nd;155.8
 2. Heart Disease;831;141.1;41st;165.5
 3. Accidents;439;63.1;7th;47.4
-4. Chronic Lower Respiratory Diseases;238;41.5;28th;40.6
+4. Chronic Lower Respiratory Disease;238;41.5;28th;40.6
 5. Stroke;196;39.0;18th (tie);37.3
 6. Suicide;193;25.8;2nd;13.5
 7. Chronic Liver Disease/Cirrhosis;124;16.3;3rd;10.7
@@ -34,7 +34,7 @@ AZ Leading Causes of Death, 2016;Deaths;Death Rate***;State Rank*;U.S. Rate**
 1. Cancer;11,876;136.8;48th;155.8
 2. Heart Disease;11,957;138.9;44th;165.5
 3. Accidents;4,010;54.2;21st;47.4
-4. Chronic Lower Respiratory Diseases;3,800;43.5;26th;40.6
+4. Chronic Lower Respiratory Disease;3,800;43.5;26th;40.6
 5. Alzheimers Disease;3,082;35.8;15th (tie);30.3
 6. Stroke;2,556;29.8;44th;37.3
 7. Diabetes;2,025;23.5;13th (tie);21.0
@@ -49,7 +49,7 @@ Drug Overdose Deaths;1,382;20.3;63,632;19.8
 AR Leading Causes of Death, 2016;Deaths;Death Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;6,612;223.7;3rd;165.5
 2. Cancer;6,727;178.8;5th;155.8
-3. Chronic Lower Respiratory Diseases;2,169;59.1;5th;40.6
+3. Chronic Lower Respiratory Disease;2,169;59.1;5th;40.6
 4. Stroke;1,643;45.6;5th;37.3
 5. Accidents;1,604;51.4;27th;47.4
 6. Alzheimers Disease;1,475;41.3;7th;30.3
@@ -67,7 +67,7 @@ CA Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 2. Cancer;59,515;139.7;45th;155.8
 3. Stroke;15,680;36.9;13th;37.3
 4. Alzheimers Disease;15,570;36.2;31st;30.3
-5. Chronic Lower Respiratory Diseases;13,710;32.6;43rd;40.6
+5. Chronic Lower Respiratory Disease;13,710;32.6;43rd;40.6
 6. Accidents;13,213;32.0;50th;47.4
 7. Diabetes;9,124;21.4;22nd;21.0
 8. Influenza/Pneumonia;5,981;14.0;25th;13.5
@@ -82,7 +82,7 @@ CO Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Cancer;7,928;134.4;47th;155.8
 2. Heart Disease;7,277;128.4;48th;165.5
 3. Accidents;2,880;49.7;29th;47.4
-4. Chronic Lower Respiratory Diseases;2,575;46.4;20th;40.6
+4. Chronic Lower Respiratory Disease;2,575;46.4;20th;40.6
 5. Stroke;1,927;35.2;33rd;37.3
 6. Alzheimers Disease;1,835;34.7;21st;30.3
 7. Suicide;1,168;20.5;9th;13.5
@@ -98,7 +98,7 @@ CT Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;7,051;144.3;39th;165.5
 2. Cancer;6,696;144.9;42nd;155.8
 3. Accidents;1,978;50.3;31st;47.4
-4. Chronic Lower Respiratory Diseases;1,425;30.5;46th (tie);40.6
+4. Chronic Lower Respiratory Disease;1,425;30.5;46th (tie);40.6
 5. Stroke;1,269;26.3;49th;37.3
 6. Alzheimers Disease;1,035;20.3;46th;30.3
 7. Diabetes;699;14.9;49th (tie);21.0
@@ -113,7 +113,7 @@ Drug Overdose Deaths;971;27.4;63,632;19.8
 DE Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Cancer;2,124;170.8;11th;155.8
 2. Heart Disease;1,974;163.2;22nd;165.5
-3. Chronic Lower Respiratory Diseases;544;43.7;25th;40.6
+3. Chronic Lower Respiratory Disease;544;43.7;25th;40.6
 4. Accidents;516;52.4;25th;47.4
 5. Stroke;506;41.6;12th;37.3
 6. Alzheimers Disease;329;27.4;31st;30.3
@@ -130,7 +130,7 @@ FL Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;45,6591;146.2;38th;165.5
 2. Cancer;44,266;146.9;40th;155.8
 3. Accidents;12,561;54.9;19th;47.4
-4. Chronic Lower Respiratory Diseases;11,970;38.0;36th;40.6
+4. Chronic Lower Respiratory Disease;11,970;38.0;36th;40.6
 5. Stroke;11,854;37.3;25th;37.3
 6. Alzheimers Disease;7,155;21.5;43rd;30.3
 7. Diabetes;5,782;19.5;35th (tie);21.0
@@ -177,7 +177,7 @@ Drug Overdose Deaths;191;12.8;63,632;19.8
 ID Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;2,969;160.0;24th;165.5
 2. Cancer;2,884;150.9;33rd (tie);155.8
-3. Chronic Lower Respiratory Diseases;865;45.7;21st;40.6
+3. Chronic Lower Respiratory Disease;865;45.7;21st;40.6
 4. Accidents;849;49.5;32nd;47.4
 5. Stroke;682;37.2;26th;37.3
 6. Alzheimers Disease;607;33.9;22nd;30.3
@@ -482,7 +482,7 @@ NY Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;44,076;177.8;15th;165.8
 2. Cancer;35,368;147.5;39th;155.8
 3. Accidents;7,354;34.2;49th;47.4
-4. Chronic Lower Respiratory Diseases;6,860;28.4;48th;40.6
+4. Chronic Lower Respiratory Disease;6,860;28.4;48th;40.6
 5. Stroke;6,258;25.5;50th;37.3
 6. Flu/Pneumonia;4,513;18.3;4th;13.5
 7. Diabetes;4,038;16.9;44th (tie);21.0
@@ -498,7 +498,7 @@ NC Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Cancer;19,523;161.6;19th;155.8
 2. Heart Disease;18,266;155.8;28th;165.5
 3. Accidents;5,476;52.2;26th;47.4
-4. Chronic Lower Respiratory Diseases;5,311;44.8;22nd;40.6
+4. Chronic Lower Respiratory Disease;5,311;44.8;22nd;40.6
 5. Stroke;4,940;43.0;8th;37.3
 6. Alzheimers disease;4,153;37.2;11th;30.3
 7. Diabetes;2,811;23.5;17th;21.0
@@ -530,7 +530,7 @@ OH Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;27,410;185.1;12th;165.5
 2. Cancer;25,509;173.4;8th;155.8
 3. Accidents;7,999;66.6;4th (tie);47.4
-4. Chronic Lower Respiratory Diseases;7,015;47.5;16th (tie);40.6
+4. Chronic Lower Respiratory Disease;7,015;47.5;16th (tie);40.6
 5. Stroke;5,987;40.6;13th;37.3
 6. Alzheimers disease;5,031;33.4;24th;30.3
 7. Diabetes;3,568;24.6;9th (tie);21.0
@@ -562,7 +562,7 @@ OR Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Cancer;8,078;155.9;31st;155.8
 2. Heart Disease;6,968;135.0;46th;165.5
 3. Accidents;2,105;46.0;34th (tie);47.4
-4. Chronic Lower Respiratory Diseases;2,080;40.4;30th;40.6
+4. Chronic Lower Respiratory Disease;2,080;40.4;30th;40.6
 5. Stroke;1,943;37.8;23rd (tie);37.3
 6. Alzheimers disease;1,786;34.8;20th;30.3
 7. Diabetes;1,240;24.0;11th (tie);21.0
@@ -610,7 +610,7 @@ SC Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Cancer;10,356;167.7;13th;155.8
 2. Heart Disease;10,195;173.8;17th;165.5
 3. Accidents;3,012;58.9;13th;47.4
-4. Chronic Lower Respiratory Diseases;2,870;47.5;16th (tie);40.6
+4. Chronic Lower Respiratory Disease;2,870;47.5;16th (tie);40.6
 5. Stroke;2,627;45.5;6th;37.3
 6. Alzheimers disease;2,481;45.3;2nd;30.3
 7. Diabetes;1,369;22.3;18th;21.0
@@ -627,7 +627,7 @@ SD Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 2. Cancer;1,694;156.7;28th;155.8
 3. Accidents;505;53.4;23rd;47.4
 4. Alzheimers disease;449;37.1;12th;30.3
-5. Chronic Lower Respiratory Diseases;426;38.3;33rd (tie);40.6
+5. Chronic Lower Respiratory Disease;426;38.3;33rd (tie);40.6
 6. Stroke;420;35.8;30th (tie);37.3
 7. Diabetes;253;23.7;15th;21.0
 8. Flu/Pneumonia;195;16.7;10th;13.5
@@ -674,7 +674,7 @@ VT Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;1,366;158.8;26th;165.5
 2. Cancer;1,356;158.4;24th;155.8
 3. Accidents;372;54.8;20th;47.4
-4. Chronic Lower Respiratory Diseases;355;41.3;29th;40.6
+4. Chronic Lower Respiratory Disease;355;41.3;29th;40.6
 5. Alzheimers disease;310;35.8;15th (tie);30.3
 6. Stroke;247;29.2;45th;37.3
 7. Diabetes;166;20.5;26th;21.0
@@ -722,7 +722,7 @@ WV Leading Causes of Death, 2016;Deaths;Rate***;State Rank*;U.S. Rate**
 1. Heart Disease;4,767;191.0;11th;165.5
 2. Cancer;4,659;182.2;3rd;155.8
 3. Accidents;1,705;89.7;1st;47.4
-4. Chronic Lower Respiratory Diseases;1,599;62.1;2nd;40.6
+4. Chronic Lower Respiratory Disease;1,599;62.1;2nd;40.6
 5. Stroke;1,039;41.7;11th;37.3
 6. Diabetes;860;34.8;1st;21.0
 7. Alzheimers disease;786;31.7;26th;30.3
@@ -797,4 +797,3 @@ Montana Mortality Data;Deaths;Rate**;U.S. Deaths;U.S. Rate***
 Firearm Deaths;194;18.9;38,658;11.8
 Homicide;42;4.3;19,103;6.1
 Drug Overdose Deaths;119;11.7;63,632;19.8
-

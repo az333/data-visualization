@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../static/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/stylesheet.css">
+  <script src="../static/d3.v3.min.js" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+  <h1>Comparing {{state1}} and {{state2}} Deaths</h1>
+
+  <div id="graphic"></div>
+
+  <script>
+  var state1data = [
+    {% for cause in causes1 %}
+    {
+      "name": "{{cause[0]}}",
+      "value": {{cause[1]}},
+    },
+    {% endfor %}
+  ];
+
+  var state2data = [
+    {% for cause in causes2 %}
+    {
+      "name": "{{cause[0]}}",
+      "value": {{cause[1]}},
+    },
+    {% endfor %}
+  ];
+  console.log(state1data);
+  console.log(state2data);
+
+//keeping only 5 cuases of death because not all states have the same leading 10 causes of death.
+  for(i = state1data.length - 1; i >= 0; i--){
+    if((state1data[i]["name"] != "Heart Disease") && (state1data[i]["name"] != "Stroke") && (state1data[i]["name"] != "Cancer") && (state1data[i]["name"] !="Chronic Lower Respiratory Disease") && (state1data[i]["name"] != "Accidents")){
+      state1data.splice(i,1);
+    }
+  }
+
+  for(i = state2data.length - 1; i >= 0; i--){
+    if((state2data[i]["name"] != "Heart Disease") && (state2data[i]["name"] != "Stroke") && (state2data[i]["name"] != "Cancer") && (state2data[i]["name"] !="Chronic Lower Respiratory Disease") && (state2data[i]["name"] != "Accidents")){
+      state2data.splice(i,1);
+    }
+  }
+
+  //sorts data alphabetically so indexes will not be confused later on
+  state1data.sort(function (a, b) {
+  var textA = a.name.toUpperCase();
+  var textB = b.name.toUpperCase();
+  return textA.localeCompare(textB);
+  });
+
+  state2data.sort(function (a, b) {
+  var textA = a.name.toUpperCase();
+  var textB = b.name.toUpperCase();
+  return textA.localeCompare(textB);
+  });
+
+  var stateNames = ["{{state1}}" , "{{state2}}"];
+  var callbackData = new Array(5);
+  for(i = 0; i < callbackData.length; i++){
+    callbackData[i] = {
+      name: state1data[i]["name"],
+      {{state1}}: state1data[i]["value"],
+      {{state2}}: state2data[i]["value"]
+  }
+};
+
+callbackData.forEach(function(d) {
+  d.states = stateNames.map(function(name) { return {name: name, value: +d[name]}; });
+});
+
+  var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+  //each cause of death
+  var x0 = d3.scale.ordinal()
+    .rangeRoundBands([0,width], .1);
+  //each state
+  var x1=d3.scale.ordinal();
+  //number of Deaths
+  var y = d3.scale.linear()
+    .range([height,0]);
+
+  var color = d3.scale.ordinal()
+    .range(["#b0c4de", "#DEB0C4"]);
+
+  var xAxis = d3.svg.axis()
+    .scale(x0)
+    .orient("bottom");
+
+  var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickFormat(d3.format(".3s"));
+
+  var svg = d3.select("#graphic").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  document.getElementsByTagName("svg")[0].setAttribute("style", "padding-left: 1%;");
+
+  x0.domain(callbackData.map(function(d) {return d.name;}));
+  x1.domain(stateNames).rangeRoundBands([0, x0.rangeBand()]);
+  y.domain([0, d3.max(callbackData, function(d) { return d3.max(d.states, function(d) { return d.value; }); })]);
+
+  svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
+
+  svg.append("g")
+    .attr("class", "y axis")
+    .call(yAxis)
+  .append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 6)
+    .attr("dy", ".71em")
+    .style("text-anchor", "end")
+    .text("Deaths");
+
+    var causeDeath = svg.selectAll(".causeDeath")
+        .data(callbackData)
+      .enter().append("g")
+        .attr("class", "g")
+        .attr("transform", function(d) { return "translate(" + x0(d.name) + ",0)"; });
+
+    causeDeath.selectAll("rect")
+        .data(function(d) { return d.states; })
+      .enter().append("rect")
+        .attr("width", x1.rangeBand())
+        .attr("x", function(d) { return x1(d.name); })
+        .attr("y", function(d) { return y(d.value); })
+        .attr("height", function(d) { return height - y(d.value); })
+        .style("fill", function(d) { return color(d.name); });
+
+    var legend = svg.selectAll(".legend")
+        .data(stateNames.slice().reverse())
+      .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+    legend.append("rect")
+      .attr("x", width - 18)
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", color);
+
+    legend.append("text")
+      .attr("x", width - 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .text(function(d) { return d; });
+
+  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='uStates.js') }}"></script><!-- creates uStates. -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js.js') }}"></script>
+</body>
+
+</html>

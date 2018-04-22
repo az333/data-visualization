@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <html>
-  
+
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../static/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../static/stylesheet.css">
     <script src="../static/d3.v3.min.js" charset="utf-8"></script>
 
@@ -12,33 +12,33 @@
         body {
             font-family: "Arial", sans-serif;
         }
-        
+
         .bar {
             fill: #5f89ad;
         }
-        
+
         .axis {
             font-size: 13px;
         }
-        
+
         .axis path,
         .axis line {
             fill: none;
             display: none;
         }
-        
+
         .label {
             font-size: 13px;
         }
     </style>
   </head>
-  
+
   <body>
     <h1>{{state}} Data</h1>
 
     <div id="graphic"></div>
     <button id="2016">2016</button> <button id="2015">2015</button>
-    
+
     <script>
       var data = [
 
@@ -48,11 +48,11 @@
 	"value": {{cause[1]}},
     },
 
-    
-    {% endfor %}
-    
-];
 
+    {% endfor %}
+
+];
+console.log(data);
 //sort bars based on value
 data = data.sort(function (a, b) {
     return d3.ascending(a.value, b.value);
@@ -133,5 +133,5 @@ bars.append("text")
     <script type="text/javascript" src="{{ url_for('static', filename='uStates.js') }}"></script><!-- creates uStates. -->
     <script type="text/javascript" src="{{ url_for('static', filename='js.js') }}"></script>
   </body>
-  
+
 </html>
