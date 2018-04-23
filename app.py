@@ -44,8 +44,8 @@ def parseData():
 
 data = parseData()
 causes=data["NY"]['causes'][0][0]
-print causes
-print data.keys()
+
+
 #-----------------------MAIN MAP PAGE--------------------------
 @app.route("/", methods = ['GET', 'POST'])
 def root():
