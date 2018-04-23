@@ -6,7 +6,7 @@ mdA -- 2018-04-16 21:16:59
 made states clickable and link to /State.html
 
 fominaS -- 2016-04-18 18:20:30
-added flask appratus and organized code
+added flask apparatus and organized code
 
 chenX -- 2018-04-18 20:23:53
 Request stuff added
