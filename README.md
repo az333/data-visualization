@@ -37,4 +37,4 @@ We will use D3 to generate the colored map of the US and bar graphs.
 
 ## Visualization Example:
 
-![Alt text](Screenshot_18.png?raw=true "Title")
+![Alt text](map.png?raw=true "Title")
