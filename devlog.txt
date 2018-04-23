@@ -20,3 +20,6 @@ fixed utah and montana data
 chenX -- 2018-04-21 22:49:23
 Finished comparison!
 
+mdA -- 2018-04-23 00:09:09
+finished styling website
+

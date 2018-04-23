@@ -103,7 +103,7 @@
     <section id="bars">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2>Top Causes of Death 2016</h2>
+          <h2>Top Causes of Death Per 100K 2016</h2>
           <hr class="star-light" style="border-color: #000000">
         </div>
       </div>
@@ -131,11 +131,13 @@
     <script src="{{ url_for('static', filename='freelancer.min.js') }}"></script>
     
     <script>
+        console.log(state1data);
+	console.log(state2data);
   var state1data = [
     {% for cause in causes1 %}
     {
       "name": "{{cause[0]}}",
-      "value": {{cause[1]}},
+      "value": {{cause[5]}},
     },
     {% endfor %}
   ];
@@ -144,12 +146,10 @@
     {% for cause in causes2 %}
     {
       "name": "{{cause[0]}}",
-      "value": {{cause[1]}},
+      "value": {{cause[5]}},
     },
     {% endfor %}
   ];
-  console.log(state1data);
-  console.log(state2data);
 
 //keeping only 5 cuases of death because not all states have the same leading 10 causes of death.
   for(i = state1data.length - 1; i >= 0; i--){

@@ -1,7 +1,6 @@
 inFile = open('../data/data.csv', 'rU')
 dataStr = inFile.read()
 statesStr = dataStr.split('\n\n')
-print statesStr
 data = dict()
 
 for state in statesStr:
@@ -10,7 +9,8 @@ for state in statesStr:
 
     lines = state.split('\n')
     causes = lines[1:11]
-
+    population = int(lines[-1].replace(',', ''))
+    
     for cause in causes:
         entries = cause.split(';')
 
@@ -28,10 +28,11 @@ for state in statesStr:
 
         #us rate
         entries[4] = float(entries[4])
+
+        #deaths per 100k
+        entries.append(100000*entries[1]/float(population))
         
         stateData["top"].append(entries)
     
     abbrev = state[0:2]
     data[abbrev] = stateData
-
-print data

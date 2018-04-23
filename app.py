@@ -16,8 +16,10 @@ def parseData():
 
         lines = state.split('\n')
         causes = lines[1:11]
+        abbrev = state[0:2]
 
         for cause in causes:
+                        
             entries = cause.split(';')
 
             #name
@@ -34,10 +36,14 @@ def parseData():
 
             #us rate
             entries[4] = float(entries[4])
+            
+            #deaths per 100k
+            population = int(lines[-1].replace(',', ''))
+            stateData['population'] = population
+            entries.append(100000*entries[1]/float(population))
 
             stateData["causes"].append(entries)
 
-        abbrev = state[0:2]
         data[str(abbrev)] = stateData
 
     return data
@@ -55,7 +61,7 @@ def root():
 #---------------------ONE STATE-------------------------------
 @app.route("/<stateId>", methods = ['GET', 'POST'])
 def state_graphs(stateId):
-    return render_template('state.html', state=stateId, causes=data[str(stateId)]['causes'])
+    return render_template('state.html', state=stateId, causes=data[str(stateId)]['causes'], population=data[str(stateId)]['population'])
 
 @app.route("/compare/", methods = ['GET', 'POST'])
 def compare():
